@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La mia pagina HTML con sfondo azzurro</title>
+	<style>
+		body {
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Benvenuti sulla mia pagina HTML</h1>
+	<p>Questa è una pagina di esempio con uno sfondo azzurro nel body principale.</p>
+	<p>Puoi personalizzare ulteriormente lo stile della pagina utilizzando CSS.</p>
+</body>
+</html>
