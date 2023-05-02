@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ecommerce Shop</title>
-    <script src="Script1.js"></script>
+    
 </head>
 <body>
     <h1>Ecommerce Shop</h1>
@@ -31,52 +31,10 @@
         <button onclick="clearCart()">Svuota carrello</button>
         <button onclick="removeLastItem()">Rimuovi ultimo elemento</button>
     </div>
-    <script>
-        var cart = [];
 
-        function addToCart(productName, price) {
-            var product = {
-                name: productName,
-                price: price
-            };
-            cart.push(product);
-            updateCart();
-        }
 
-        function clearCart() {
-            cart = [];
-            updateCart();
-        }
-
-        function removeLastItem() {
-            cart.pop();
-            updateCart();
-        }
-
-        function confirmPurchase() {
-            if (cart.length === 0) {
-                alert('Il carrello è vuoto!');
-            } else {
-                alert('Acquisto confermato ora 6 povero !');
-                clearCart();
-            }
-        }
-
-        function updateCart() {
-            var cartElement = document.getElementById('cart');
-            cartElement.innerHTML = '';
-            var totalPrice = 0;
-            for (var i = 0; i < cart.length; i++) {
-                var product = cart[i];
-                var li = document.createElement('li');
-                li.textContent = product.name + ' - ' + product.price + '€';
-                cartElement.appendChild(li);
-                totalPrice += product.price;
-            }
-            var totalLi = document.createElement('li');
-            totalLi.textContent = 'Totale: ' + totalPrice + '€';
-            cartElement.appendChild(totalLi);
-        }
-    </script>
+    <script src="Script1.js"></script>
+   //
+    
 </body>
 </html>
